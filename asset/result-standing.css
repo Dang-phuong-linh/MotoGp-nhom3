@@ -1,0 +1,96 @@
+.results__container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 52.5em) {
+  .results__container .primary-filter {
+    padding: 0 4.8rem;
+  }
+}
+@media (min-width: 52.5em) {
+  .primary-filter {
+    flex-wrap: nowrap;
+  }
+}
+.primary-filter {
+  display: flex;
+  position: relative;
+  background-color: #000;
+  background-image: radial-gradient(
+    96.8% 493.26% at 100% 93.41%,
+    rgba(254, 11, 7, 0.219) 0,
+    rgba(148, 4, 1, 0) 100%
+  );
+  border-top: 0.05rem solid rgba(51, 56, 62, 0.5);
+  min-height: 5rem;
+}
+.primary-filter__filter-container:first-of-type {
+  border-right: 0.05rem solid rgba(51, 56, 62, 0.5);
+}
+@media (min-width: 52.5em) {
+  .primary-filter__filter-container {
+    min-height: 6.4rem;
+    border-right: 0.05rem solid rgba(51, 56, 62, 0.5);
+    border-bottom: 0.05rem solid rgba(51, 56, 62, 0.5);
+    border-left: 0.05rem solid rgba(51, 56, 62, 0.5);
+  }
+}
+.primary-filter__filter-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem 0 1.6rem;
+  position: relative;
+  width: 50%;
+}
+
+@media (min-width: 52.5em) {
+  .primary-filter__filter-label {
+    top: 1.6rem;
+  }
+}
+.primary-filter__filter-label {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  letter-spacing: -0.02em;
+  color: #9fa0a4;
+  pointer-events: none;
+  position: absolute;
+}
+
+.primary-filter__filter-container select {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  margin: 0;
+  padding: 0.8rem 1.8rem 0 0;
+  background-image: url(https://www.motogp.com/resources/v7.7.1/i/svg-files/elements/filter-arrow-white.svg);
+  background-position: 100%;
+  background-size: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 800;
+}
+.primary-filter__filter-container select option {
+  background-color: #000;
+}
+
+@media (min-width: 52.5em) {
+  .results__hero-container {
+    min-height: 20.8rem;
+  }
+}
+.results__hero-container {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: #000;
+}
