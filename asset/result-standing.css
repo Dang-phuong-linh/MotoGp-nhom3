@@ -94,3 +94,288 @@
   position: relative;
   background-color: #000;
 }
+
+@media (min-width: 52.5em) {
+  .results__hero-image::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+    background: linear-gradient(90deg, #000 25%, transparent 80%);
+  }
+}
+.results__hero-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.results__hero-image img.active {
+  opacity: 1;
+}
+.results__hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 75%;
+  transition: opacity 0.5s ease-in-out;
+  min-height: 11.8rem;
+}
+
+@media (min-width: 64.0625em) {
+  .results__hero-text {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    width: 60%;
+  }
+}
+@media (min-width: 52.5em) {
+  .results__hero-text {
+    padding: 3.5rem 4.8rem 1.3rem;
+    height: 100%;
+    position: relative;
+  }
+}
+.results__hero-text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  color: #fff;
+  left: 0;
+}
+
+.results-table {
+  margin: 4.8rem 4.8rem 2.4rem;
+}
+
+.results-table__weather {
+  display: flex;
+  background: #fff;
+  justify-content: flex-start;
+  padding: 1rem 0;
+}
+
+.results-table__weather-column:first-of-type {
+  margin: 0 -1.6rem 0 1.6rem;
+  justify-content: center;
+}
+.results-table__weather-column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.4rem;
+}
+.results-table__weather-icon {
+  fill: #585e65;
+  font-size: 3em;
+}
+
+.results-table__weather-header--cell {
+  color: #585e65;
+}
+.results-table__weather-header {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #9fa0a4;
+}
+
+.results-table__weather-cell {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: #585e65;
+  font-weight: 700;
+}
+
+.results-table__table {
+  width: 100%;
+  table-layout: fixed;
+  background: #fff;
+}
+
+.results-table__header-cell--pos {
+  width: 8rem;
+}
+
+.results-table__header-cell--pos {
+  width: 8rem;
+}
+.results-table__header-cell {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #000;
+  text-align: left;
+  height: 2.4rem;
+  padding: 0 1rem 0 1.6rem;
+  letter-spacing: 0.025rem;
+  text-transform: capitalize;
+}
+
+.results-table__header-cell--points {
+  color: #9fa0a4;
+  width: 8rem;
+}
+
+.results-table__header-cell--rider {
+  text-align: center;
+  width: 40rem;
+}
+
+.results-table__header-cell--team {
+  color: #9fa0a4;
+}
+
+.results-table__header-cell--time {
+  text-align: right;
+  width: 10rem;
+}
+
+.results-table tbody {
+  border-top: 0.1rem solid #ededed;
+}
+
+.results-table__body-row {
+  height: 7rem;
+  border-bottom: 0.1rem solid #ededed;
+}
+
+.results-table__body-cell--pos {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  font-size: 3.2rem;
+}
+.results-table__body-cell {
+  color: #171c21;
+  padding: 0 1rem 0 1.6rem;
+  position: relative;
+}
+
+.results-table__body-cell--points {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3.2rem;
+  color: #9fa0a4;
+}
+
+.results-table__body-cell--rider {
+  padding: 0 1.6rem 0 0;
+}
+
+.results-table__rider-details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.results-table__rider-details .rider-image-container {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 7rem;
+  overflow: hidden;
+  width: 10rem;
+  position: relative;
+  margin-right: 5rem;
+}
+
+.results-table__rider-details .rider-image-container .picture__img {
+  min-width: 15.5rem;
+  margin-left: -3rem;
+}
+
+.rider-image img {
+  width: 100%;
+}
+
+.results-table__rider-name-wrapper {
+  width: 65%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: auto;
+}
+
+.results-table__rider-name {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  width: 100%;
+  text-align: left;
+}
+
+.results-table__body-cell--number {
+  font-weight: 700;
+  font-size: 2rem;
+  display: block;
+  min-width: 3.5rem;
+  padding: 0 1rem 0 0;
+  color: #9fa0a4;
+}
+
+.results-table__body-cell--full-name {
+  color: #181c21;
+  font-weight: 700;
+  font-size: 2rem;
+  display: block;
+  min-width: 3.5rem;
+  padding: 0 1rem 0 0;
+}
+.results-table__rider-link {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: inherit;
+  text-decoration: none;
+}
+.results-table__first-name {
+  font-weight: 200;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.results-table__body-cell-flag {
+  height: 1.8rem;
+  border: 0.1rem solid #ededed;
+  border-radius: 0.4rem;
+}
+
+.results-table__body-cell--team {
+  font-size: 1.6rem;
+  letter-spacing: 0.025rem;
+  color: #9fa0a4;
+  font-weight: 700;
+}
+
+.results-table__body-cell--time {
+  text-align: right;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.gresini {
+  border-left: 4px solid rgb(157, 180, 217);
+}
+.ducati {
+  border-left: 4px solid rgb(204, 0, 0);
+}
+.red-bull {
+  border-left: 4px solid rgb(255, 102, 0);
+}
+.pertamina {
+  border-left: 4px solid rgb(219, 255, 3);
+}
+.monster {
+  border-left: 4px solid rgb(12, 54, 140);
+}
+.trackhouse {
+  border-left: 4px solid rgb(0, 102, 204);
+}
+.castrol,
+.idemitsu,
+.hrc {
+  border-left: 4px solid rgb(250, 250, 250);
+}
+.prima {
+  border-left: 4px solid rgb(130, 52, 194);
+}
+.aprilia {
+  border-left: 4px solid rgb(92, 179, 58);
+}

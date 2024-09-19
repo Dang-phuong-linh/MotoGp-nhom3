@@ -15,6 +15,9 @@ header,
 nav {
   display: block;
 }
+table {
+  border-collapse: collapse;
+}
 select {
   line-height: 2.6;
   background-repeat: no-repeat;
