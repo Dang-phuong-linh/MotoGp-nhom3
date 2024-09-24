@@ -86,3 +86,95 @@ document.addEventListener("DOMContentLoaded", function () {
     resultList.appendChild(row);
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const standings = [
+    {
+      pos: 1,
+      riderImg:
+        "https://resources.motogp.pulselive.com/photo-resources/2024/03/07/2b32c79b-826b-4371-b357-3504438f4973/89-Jorge-Martin-Official-Rider_DSC9358.png?height=300&width=200",
+      bikeNumber: 89,
+      firstName: "J.",
+      LastName: "Martin",
+      teamName: "Prima Pramac Racing",
+      flag: "https://static-files.motogp.pulselive.com/assets/flags/es.svg",
+      point: 341,
+    },
+  ];
+
+  const standingList = document.getElementById("standingList");
+  standingList.innerHTML = "";
+
+  standings.forEach((standing) => {
+    const row = document.createElement("tr");
+    row.className = "standings-table__body-row";
+
+    if (standing.teamName === "Gresini Racing MotoGP") {
+      row.classList.add("gresini");
+    } else if (standing.teamName === "Ducati Lenovo Team") {
+      row.classList.add("ducati");
+    } else if (standing.teamName === "Red Bull KTM Factory Racing") {
+      row.classList.add("red-bull");
+    } else if (standing.teamName === "Pertamina Enduro VR46 Racing Team") {
+      row.classList.add("pertamina");
+    } else if (standing.teamName === "Monster Energy Yamaha MotoGP Team") {
+      row.classList.add("monster");
+    } else if (standing.teamName === "Trackhouse Racing") {
+      row.classList.add("trackhouse");
+    } else if (standing.teamName === "CASTROL Honda LCR") {
+      row.classList.add("castrol");
+    } else if (standing.teamName === "IDEMITSU Honda LCR") {
+      row.classList.add("idemitsu");
+    } else if (standing.teamName === "HRC Test Team") {
+      row.classList.add("hrc");
+    } else if (standing.teamName === "Prima Pramac Racing") {
+      row.classList.add("prima");
+    } else if (standing.teamName === "Aprilia Racing") {
+      row.classList.add("aprilia");
+    }
+
+    row.innerHTML = `
+    <td class="standings-table__body-cell standings-table__body-cell--pos">${standing.pos}</td>
+    <td class="standings-table__body-cell standings-table__body-cell--rider">
+      <div class="standings-table__rider-details">
+        <div class="rider-image-container">
+          <div class="rider-image">
+            <div class="u-observed lazy-image-wrapper ">
+              <picture class="picture">
+                <img class="img undefined picture__img " src="${standing.riderImg}" alt="${standing.LastName}"/>
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="standings-table__rider-name-wrapper u-hide-tablet">
+          <div class="standings-table__rider-name">
+            <span class="standings-table__body-cell standings-table__body-cell--number">
+            ${standing.bikeNumber}
+            </span>
+            <span class="standings-table__body-cell standings-table__body-cell--full-name">
+              <a class="standings-table__rider-link">
+                <span class="standings-table__first-name">
+                ${standing.firstName}
+                </span>
+                ${standing.LastName}
+              </a>
+            </span>
+          </div> 
+
+          <img class="standings-table__body-cell-flag" src="${standing.flag}"/>
+        </div> 
+      </div>
+    </td>
+
+    <td class="standings-table__body-cell standings-table__body-cell--team u-hide-tablet">
+    ${standing.teamName}
+    </td>
+
+    <td class="standings-table__body-cell standings-table__body-cell--points">
+    ${standing.point}
+    </td>
+    `;
+    standingList.appendChild(row);
+  });
+});
