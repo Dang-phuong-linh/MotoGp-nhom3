@@ -1,0 +1,161 @@
+@media (min-width: 52.5em) {
+  .rider-hero__container {
+    border-bottom: 0.05rem solid #33383e;
+  }
+}
+.rider-hero__container {
+  position: relative;
+  background-color: #171c21;
+}
+
+@media (min-width: 52.5em) {
+  .rider-hero__back-button {
+    left: 4.8rem;
+    top: 4.6rem;
+  }
+}
+.rider-hero__back-button {
+  position: absolute;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.2em;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.rider-hero__back-button .chevron {
+  width: 0.6rem;
+  height: 1rem;
+  fill: #fff;
+}
+
+@media (min-width: 52.5em) {
+  .rider-hero__background {
+    height: 72rem;
+  }
+}
+.rider-hero__background {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+@media (min-width: 52.5em) {
+  .rider-hero__background-team-colour {
+    height: 100%;
+  }
+}
+.rider-hero__background-team-colour {
+  opacity: 0.32;
+  background-image: linear-gradient(180deg, rgba(23, 28, 33, 0), #171c21);
+}
+
+@media (min-width: 52.5em) {
+  .rider-hero__background-info {
+    left: auto;
+    top: auto;
+    bottom: 0;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1.2rem;
+    align-content: flex-end;
+    justify-content: flex-end;
+    padding-right: 5rem;
+    overflow: visible;
+    opacity: 0.64;
+  }
+}
+.rider-hero__background-info {
+  position: absolute;
+  width: 100%;
+  height: 39rem;
+}
+
+@media (min-width: 52.5em) {
+  .rider-hero__background-initials {
+    font-size: 5.6rem;
+    font-style: normal;
+    line-height: 1;
+    text-align: right;
+    color: #fff;
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: translate(0);
+    margin-bottom: -8.7rem;
+  }
+}
+.rider-hero__background-initials {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+@media (min-width: 52.5em) {
+  .rider-hero__background-name {
+    font-family: serif;
+    font-weight: bold;
+    font-size: 32rem;
+    line-height: 32rem;
+    text-align: right;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+  }
+}
+
+@media (min-width: 52.5em) {
+  .rider-hero__background-gradient {
+    height: 100%;
+  }
+}
+.rider-hero__background-gradient {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(270deg, transparent, #171c21 112%);
+}
+
+@media (min-width: 52.5em) {
+  .rider-hero__background-image {
+    right: 0;
+    bottom: 0;
+    left: auto;
+    transform: none;
+    width: 80rem;
+  }
+}
+.rider-hero__background-image {
+  position: absolute;
+}
+
+.rider-hero__background .rider-image-container {
+  position: relative;
+}
+
+.rider-hero__background .rider-image img {
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  display: block;
+  width: auto;
+}
+
+.rider-hero__background .rider-image img {
+  left: 51%;
+  position: relative;
+  transform: translateX(-55%);
+  display: block;
+  width: 102rem;
+}
+.rider-hero__background .rider-image .picture__img {
+  max-width: 114%;
+}
