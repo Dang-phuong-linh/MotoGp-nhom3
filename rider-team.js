@@ -14,6 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
       flagImg: "https://static-files.motogp.pulselive.com/assets/flags/it.svg",
       countryName: "Italy",
       teamName: "Ducati Lenovo Team",
+      currentPos: 2,
+      currentPoint: 329,
+      currentVic: 7,
+      teammateImg:
+        "https://resources.motogp.pulselive.com/photo-resources/2024/02/19/ca002749-a487-432f-879e-e44969678daa/rider-bio_eneabastianini.png?height=300&width=200",
+      teammateName: "Enea Bastianini",
     },
   ];
 

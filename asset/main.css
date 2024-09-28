@@ -1015,3 +1015,15 @@ a:hover {
 .tabs__item + .tabs__item {
   margin-left: 4rem;
 }
+
+.profile-tabs {
+  background: #fff;
+}
+
+.profile-tabs .tabs {
+  background: radial-gradient(
+    96.8% 493.26% at 100% 93.41%,
+    rgb(69, 17, 16) 0,
+    rgb(0, 0, 0) 100%
+  );
+}

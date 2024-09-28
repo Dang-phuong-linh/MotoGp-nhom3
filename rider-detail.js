@@ -127,8 +127,98 @@ if (riderDetails) {
             </div>
           </div>
         </div>
+
+        <div class="rider-hero__background-image-gradient">
+        </div>
+      </div>
+
+      <div class="rider-hero__info-container">
+        <span class="rider-hero__info-hashtag">
+        ${riderDetails.riderHashtag}
+        </span>
+        <span class="rider-hero__info-name">
+        ${riderDetails.firstName} ${riderDetails.lastName}
+        </span>
+        <div class="rider-hero__details-container">
+          <span class="rider-hero__details-country">
+            <div class="rider-hero__flag-container">
+              <img class="rider-hero__details-flag" src="${riderDetails.flagImg}"/>
+            </div>
+            ${riderDetails.countryName}
+          </span>
+          <span class="rider-hero__details-team">
+          ${riderDetails.teamName}
+          </span>
+        </div>
+        <a class="rider-hero__shop-now-button">
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+          Shop Now
+        </a>
+        <div class="rider-hero__current-season-container">
+          <div class="rider-hero__current-season-title">
+            Current Season
+          </div>
+
+          <div class="rider-hero__current-season-stats-container">
+            <div class="rider-hero__current-season-stats-stat">
+              <span class="rider-hero__current-season-stats-title">Position</span>
+              <span class="rider-hero__current-season-stats-value">${riderDetails.currentPos}</span>
+            </div>
+            <div class="rider-hero__current-season-stats-stat">
+              <span class="rider-hero__current-season-stats-title">Points</span>
+              <span class="rider-hero__current-season-stats-value">${riderDetails.currentPoint}</span>
+            </div>
+            <div class="rider-hero__current-season-stats-stat">
+              <span class="rider-hero__current-season-stats-title">Victories</span>
+              <span class="rider-hero__current-season-stats-value">${riderDetails.currentVic}</span>
+            </div>
+          </div>
+
+          <a class="rider-hero__results-and-standings-button">  
+             Results & Standings	
+             <i class="fa-regular fa-chevron-right" style="color: #ffffff;"></i>
+          </a>
+
+          <div class="rider-hero__teammate-container">
+            <a class="rider-hero__teammate-profile">
+              <div class="rider-hero__teammate">
+                <div class="rider-hero__teammate-image-container">
+                  <div class="rider-image-container">
+                    <div class="rider-image">
+                      <div class="u-observed lazy-image-wrapper">
+                        <picture class=" picture">
+                          <img class="img undefined picture__img" src="${riderDetails.teammateImg}"/>
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rider-hero__teammate-details">
+                  <span class="rider-hero__teammate-title">Teammate</span>
+                  <span class="rider-hero__teammate-name">
+                  ${riderDetails.teammateName}
+                  </span>
+                </div>
+                <i class="fa-regular fa-chevron-right" style="color: #ffffff;"></i>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+  <section class="profile-tabs">
+    <div class="tabs widget-outer-spacing">
+      <ul class="tabs__list tabs__list--center">
+        <li class="tabs__item">
+          <button id="tab-overview" class="tabs__link is-active">
+            <span class="tabs__link-text">Overview</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
   `;
 }
