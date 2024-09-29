@@ -40,6 +40,7 @@ img {
 }
 h1,
 h3,
+h2,
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -1026,4 +1027,51 @@ a:hover {
     rgb(69, 17, 16) 0,
     rgb(0, 0, 0) 100%
   );
+}
+
+.tabs__tab-content--grey {
+  background: #f9f9f9;
+}
+
+.widget-header {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  gap: 0.8rem;
+}
+
+@media (min-width: 52.5em) {
+  h2.widget-header__title::before {
+    width: 2.1rem;
+    height: 2.6rem;
+  }
+}
+h2.widget-header__title::before {
+  display: flex;
+  position: relative;
+  content: "";
+  background-image: url(https://www.motogp.com/resources/v7.8.0/i/svg-files/elements/widget-header.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: 52.5em) {
+  h2.widget-header__title {
+    font-size: 3.7rem;
+  }
+}
+h2.widget-header__title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  text-transform: capitalize;
+}
+@media (min-width: 52.5em) {
+  .widget-header__title {
+    flex: none;
+  }
+}
+.widget-header__title {
+  order: 1;
 }

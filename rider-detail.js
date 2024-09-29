@@ -99,7 +99,7 @@ if (riderDetails) {
   document.getElementById("riderDetails").innerHTML = `
   <div class="rider-hero">
     <div class="rider-hero__container">
-      <a class="rider-hero__back-button">
+      <a id="backRiderBtn" class="rider-hero__back-button">
         <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>        
         ALL RIDERS
       </a>
@@ -174,7 +174,7 @@ if (riderDetails) {
             </div>
           </div>
 
-          <a class="rider-hero__results-and-standings-button">  
+          <a id="backResultStandingBtn" class="rider-hero__results-and-standings-button">  
              Results & Standings	
              <i class="fa-regular fa-chevron-right" style="color: #ffffff;"></i>
           </a>
@@ -217,7 +217,61 @@ if (riderDetails) {
             <span class="tabs__link-text">Overview</span>
           </button>
         </li>
+        <li class="tabs__item">
+          <button id="tab-overview" class="tabs__link">
+            <span class="tabs__link-text">News</span>
+          </button>
+        </li>
+         <li class="tabs__item">
+          <button id="tab-overview" class="tabs__link">
+            <span class="tabs__link-text">Video</span>
+          </button>
+        </li>
       </ul>
+    </div>
+
+    <div id="tab-content-overview" class="tabs__tab-content tabs__tab-content--grey">
+      <div class="rider-stats">
+        <div class="rider-stats__header">
+          <header class="widget-header  widget-header--no-cta ">
+            <h2 class="widget-header__title">Rider Stats</h2>
+          </header>
+          <div class="rider-stats__supplier"></div>
+        </div>
+
+        <div class="rider-stats__container">
+          <div class="rider-stats__menu-container">
+            <button class="rider-stats__menu-button active">
+            total</button>
+            <button class="rider-stats__menu-button">MotoGP™</button>
+            <button class="rider-stats__menu-button">Moto2™</button>
+            <button class="rider-stats__menu-button">Moto3™</button>
+          </div>
+
+          <div class="rider-stats__stats-container rider-stats__stats-container--tablet">
+            <div class="rider-stats__stats-stat">
+              <span class="rider-stats__stats-stat-title">WORLD CHAMPIONSHIPS</span>
+              <span class="rider-stats__stats-stat-value">${riderDetails.totalWorldCham}</span>
+            </div>
+            <div class="rider-stats__stats-stat">
+              <span class="rider-stats__stats-stat-title">Victories</span>
+              <span class="rider-stats__stats-stat-value">${riderDetails.totalVic}</span>
+            </div>
+            <div class="rider-stats__stats-stat">
+              <span class="rider-stats__stats-stat-title">Podiums</span>
+              <span class="rider-stats__stats-stat-value">${riderDetails.totalPod}</span>
+            </div>
+            <div class="rider-stats__stats-stat">
+              <span class="rider-stats__stats-stat-title">Poles</span>
+              <span class="rider-stats__stats-stat-value">${riderDetails.totalPole}</span>
+            </div>
+             <div class="rider-stats__stats-stat">
+              <span class="rider-stats__stats-stat-title">Races</span>
+              <span class="rider-stats__stats-stat-value">${riderDetails.totalRace}</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   `;

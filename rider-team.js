@@ -20,6 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
       teammateImg:
         "https://resources.motogp.pulselive.com/photo-resources/2024/02/19/ca002749-a487-432f-879e-e44969678daa/rider-bio_eneabastianini.png?height=300&width=200",
       teammateName: "Enea Bastianini",
+      totalWorldCham: 3,
+      totalVic: 35,
+      totalPod: 69,
+      totalPole: 28,
+      totalRace: 206,
     },
   ];
 
@@ -339,6 +344,12 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     </div>
     `;
+    link.addEventListener("click", () => {
+      //luu thong tin vao localStorage
+      localStorage.setItem("riderDetails", JSON.stringify(rider));
+      //chuyen huong den trang rider-detail
+      window.location.href = "rider-detail.html";
+    });
 
     riderList2.appendChild(link);
   });
