@@ -195,6 +195,17 @@ document.addEventListener("DOMContentLoaded", function () {
       flagImg: "https://static-files.motogp.pulselive.com/assets/flags/es.svg",
       countryName: "Spain",
       teamName: "MT Helmets - MSI",
+      currentPos: 2,
+      currentPoint: 166,
+      currentVic: 2,
+      teammateImg:
+        "https://resources.motogp.pulselive.com/photo-resources/2024/03/05/5249a552-e1b7-444a-a3bf-763814a50b0d/79_Ai_Ogura_Moto2_Rider_DS_3385.png?height=300&width=200",
+      teammateName: "Ai Ogura",
+      totalWorldCham: "-",
+      totalVic: 9,
+      totalPod: 25,
+      totalPole: 3,
+      totalRace: 103,
     },
   ];
 
@@ -368,6 +379,17 @@ document.addEventListener("DOMContentLoaded", function () {
       flagImg: "https://static-files.motogp.pulselive.com/assets/flags/th.svg",
       countryName: "Thailand",
       teamName: "Honda Team Asia",
+      currentPos: 0,
+      currentPoint: 0,
+      currentVic: 0,
+      teammateImg:
+        "https://resources.motogp.pulselive.com/photo-resources/2024/03/05/e422b8bc-eeaa-4246-b328-5fa3645c9948/72_Taiyo_Furusato_Moto3_Rider_DS_2476.png?height=300&width=200",
+      teammateName: "Taiyo Furusato",
+      totalWorldCham: "-",
+      totalVic: "-",
+      totalPod: "-",
+      totalPole: "-",
+      totalRace: 18,
     },
   ];
 
@@ -517,6 +539,12 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     </div>
     `;
+    link.addEventListener("click", () => {
+      //luu thong tin vao localStorage
+      localStorage.setItem("riderDetails", JSON.stringify(rider));
+      //chuyen huong den trang rider-detail
+      window.location.href = "rider-detail.html";
+    });
 
     riderList3.appendChild(link);
   });
@@ -535,6 +563,16 @@ document.addEventListener("DOMContentLoaded", function () {
       flagImg: "https://static-files.motogp.pulselive.com/assets/flags/de.svg",
       countryName: "Germany",
       teamName: "Dynavolt Intact GP MotoE",
+      currentPos: 11,
+      currentPoint: 111,
+      currentVic: 0,
+      teammateImg: null,
+      teammateName: null,
+      totalWorldCham: "-",
+      totalVic: 1,
+      totalPod: 1,
+      totalPole: "-",
+      totalRace: 68,
     },
   ];
 
@@ -684,6 +722,12 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     </div>
     `;
+    link.addEventListener("click", () => {
+      //luu thong tin vao localStorage
+      localStorage.setItem("riderDetails", JSON.stringify(rider));
+      //chuyen huong den trang rider-detail
+      window.location.href = "rider-detail.html";
+    });
 
     riderList4.appendChild(link);
   });
